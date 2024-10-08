@@ -1,60 +1,49 @@
 :root {
-  --primary-color: #12263A;
-  --secondary-color: #06BCC1;
-  --accent-color: #C5D8D1;
-  --text-color: #F4EDEA;
-  --background-color: #F4D1AE;
+  --color-dark-blue: #12263A;
+  --color-teal: #06BCC1;
+  --color-light-green: #C5D8D1;
+  --color-off-white: #F4EDEA;
+  --color-peach: #F4D1AE;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  color: var(--color-dark-blue);
-  background-color: var(--color-off-white);
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  background-color: var(--color-off-white);
   color: var(--color-dark-blue);
 }
 
-p {
-  line-height: 1.6;
-}
-
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-/* Header styles */
 header {
+  background-color: var(--color-dark-blue);
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 }
 
-header img {
-  max-width: 150px;
+.logo {
+  width: 100px;
 }
 
 nav a {
-  margin-left: 20px;
+  color: var(--color-off-white);
+  text-decoration: none;
+  margin-left: 1rem;
 }
 
-/* Hero styles */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 .hero {
+  background-image: url('wwrhero.jpg');
+  background-size: cover;
+  color: var(--color-off-white);
+  padding: 2rem;
   position: relative;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .hero h1 {
@@ -64,7 +53,6 @@ nav a {
   color: var(--background-color);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 .hero article {
   position: absolute;
   bottom: 20px;
@@ -74,13 +62,11 @@ nav a {
   padding: 20px;
   border-radius: 5px;
 }
-
 .hero article img {
   float: right;
   max-width: 150px;
   margin-left: 20px;
 }
-
 /* Section styles */
 section {
   margin: 40px 0;
@@ -92,20 +78,37 @@ section img {
   margin-bottom: 20px;
 }
 
-/* Footer styles */
+h2 {
+  color: var(--color-teal);
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+}
+
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  border-top: 1px solid var(--secondary-color);
+  background-color: var(--color-dark-blue);
+  color: var(--color-off-white);
+  padding: 1rem;
+  text-align: center;
 }
 
-.sociallinks a {
-  margin-left: 10px;
+.social-icons {
+  margin-top: 1rem;
 }
 
-.sociallinks img {
+.social-icons a {
+  margin: 0 0.5rem;
+}
+
+.social-icons img {
   width: 30px;
   height: 30px;
 }

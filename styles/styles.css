@@ -1,7 +1,7 @@
 root {
    --heading-background-color: #f06;
    --heading-text-color: #333;
-   --heading-font: 'Monteserat', Helvetica, sans-serif;
+   --heading-font: 'Monteserrat', Helvetica, sans-serif;
    --padding: 1rem;
    --border: 1px solid rgba(0,0,0,0.1);
 }
