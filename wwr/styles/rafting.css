@@ -1,0 +1,134 @@
+:root {
+    --primary-color: hsl(221, 53%, 15%);
+    --secondary-color: rgb(5, 194, 37);
+    --accent1-color: #053dd8;
+    --accent2-color: rgba(245, 239, 235, 0.774);
+    --background-color: #ffffffd0; /* Slightly transparent white */
+    --text-color:  rgb(13, 0, 128); /* Dark text color */
+    --hero-opacity: 0.85; /* Opacity for the hero article background */
+    --link-color: hsl(308, 50%, 36%); /* Link color */
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px; /* Limit the width of the page */
+    margin: auto; /* Center the content */
+    color: var(--primary-color);
+    max-width: 1200px;
+    padding: 0 20px;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: blue;
+    padding: 10px 20px;
+} 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--secondary-color);
+  }
+  
+  header img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  header nav {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    color: var(--secondary-color);
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 15px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+  }
+
+  .hero {
+    position: relative; /* Set hero as relative to position children absolutely */
+    overflow: hidden; /* Hide overflow if necessary */
+  }
+  
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 10%; /* Position the title near the top */
+    left: 5%; /* Position from the left side */
+    color: var(--secondary-color); /* Use secondary color for visibility */
+    font-size: 3em; /* Adjust size as necessary */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+    z-index: 2; /* Ensure it's above the image */
+  }
+
+  .hero p {
+    position: absolute;
+    top: 20%; /* Position below the heading */
+    left: 5%; /* Align with the heading */
+    color: var(--text-color); /* Use text color for visibility */
+    font-size: 1.2em; /* Adjust size as necessary */
+    max-width: 600px; /* Limit width for readability */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+    z-index: 2; /* Ensure it's above the image */
+  }
+
+  .hero img.hero-small-image {
+    float: right; /* Float the small image to the right */
+    margin-left: 15px; /* Add margin to separate from text */
+    width: 40%; /* Adjust size as necessary */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  main h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+  }
+  
+  main p {
+    font-family: var(--text-font);
+    color: var(--primary-color);
+  }
+  
+  footer {
+    background-color: var(--secondary-color);
+    color: blue;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  footer a {
+    margin: 0 10px;
+  }
+  
+  .sociallinks {
+    margin-top: 1rem;
+  }
+  
+  .sociallinks a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+  }
+  
+  .sociallinks img {
+    width: 30px;
+    height: 30px;
+  }
+  
