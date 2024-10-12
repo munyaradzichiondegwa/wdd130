@@ -23,7 +23,7 @@ header {
 }
 
 header img {
-    max-width: 100px;
+    max-width: 150px;
 }
 
 nav {
@@ -45,7 +45,7 @@ nav a {
 }
 
 .hero-text {
-    max-width: 60%; /* Adjust as needed */
+    max-width: 70%; /* Adjust as needed */
 }
 
 .hero-image {
@@ -116,7 +116,7 @@ footer {
 .footer-content {
     display: flex;
     justify-content: space-between; /* Space between left and right */
-    align-items: center; /* Center items vertically */
+    align-items: right; /* Center items vertically */
     max-width: 1200px; /* Match the main content width */
     margin: auto; /* Center the footer */
 }
