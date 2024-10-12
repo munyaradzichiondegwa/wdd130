@@ -20,6 +20,7 @@ header {
     align-items: center;
     background-color: var(--secondary-color);
     padding: 10px;
+    margin: 2px
 }
 
 header img {
@@ -111,26 +112,28 @@ footer {
     background-color: var(--secondary-color);
     color: white;
     padding: 15px;
+    margin: 5px 0; /* Add a default margin to the footer */
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between; /* Space between left and right */
     align-items: center; /* Center items vertically */
-    max-width: 1200px; /* Match the main content width */
+    max-width: 1000px; /* Match the main content width */
     margin: auto; /* Center the footer */
 }
 
 .footer-content p {
     margin: 0; /* Remove default margin */
+    padding-right: 10px; /* Optional: Add slight padding for separation */
 }
 
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 5px; /* Reduce gap between icons */
 }
 
 .social-icons img {
-    width: 30px;
-    height: 30px;
+    width: 25px; /* Adjust icon size if needed */
+    height: 25px; /* Adjust icon size if needed */
 }
