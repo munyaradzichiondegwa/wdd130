@@ -117,7 +117,7 @@ footer {
     display: flex;
     justify-content: space-between; /* Space between left and right */
     align-items: center; /* Center items vertically */
-    max-width: 500px; /* Match the main content width */
+    max-width: 1200px; /* Match the main content width */
     margin: auto; /* Center the footer */
 }
 
