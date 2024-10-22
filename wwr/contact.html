@@ -61,15 +61,15 @@
             <p>Our dedicated team ensures a memorable and safe experience for everyone, whether you're a beginner or an experienced rafter.</p>
             <div class="profiles">
                 <figure>
-                    <img src="images/Nanae Maks.jpg" alt="Nanae Maks - Rafting Guide">
+                    <img src="images/NanaeMaks.jpg" alt="Nanae Maks - Rafting Guide">
                     <figcaption>Nanae Maks - Rafting Guide</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/Wayne Hobs.jpg" alt="Wayne Hobs - Customer Service">
+                    <img src="images/WayneHobs.jpg" alt="Wayne Hobs - Customer Service">
                     <figcaption>Wayne Hobs - Customer Service</figcaption>
                 </figure>
                 <figure>
-                    <img src="images/Xerah Muz.jpg" alt="Xera Muz - Safety Officer">
+                    <img src="images/XerahMuz.jpg" alt="Xera Muz - Safety Officer">
                     <figcaption>Xera Muz - Safety Officer</figcaption>
                 </figure>
             </div>
@@ -83,32 +83,36 @@
                 </figure>
             </div>
         </section>
+
         <section class="contact-form">
             <h2>Get in Touch</h2>
             <form action="submit_form.php" method="post">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
-
+        
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
-
-                <label for="inquiry">Purpose of Message:</label>
+        
+                <label for="purpose">Purpose of Message:</label>
                 <div>
-                    <input type="radio" id="general" name="inquiry" value="General Inquiry" required>
-                    <label for="general">General Inquiry</label>
-                    <input type="radio" id="reservation" name="inquiry" value="Reservation Question">
-                    <label for="reservation">Reservation Question</label>
-                    <input type="radio" id="suggestion" name="inquiry" value="Website Suggestion">
-                    <label for="suggestion">Website Suggestion</label>
+                    <input type="radio" id="purpose-general" name="purpose" value="General Inquiry" required>
+                    <label for="purpose-general">General Inquiry</label>
+        
+                    <input type="radio" id="purpose-reservation" name="purpose" value="Reservation Question">
+                    <label for="purpose-reservation">Reservation Question</label>
+        
+                    <input type="radio" id="purpose-suggestion" name="purpose" value="Website Suggestion">
+                    <label for="purpose-suggestion">Website Suggestion</label>
                 </div>
-
+        
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-
+        
                 <div>
                     <input type="checkbox" id="subscribe" name="subscribe">
                     <label for="subscribe">Please subscribe me to the monthly newsletter</label>
                 </div>
+        
                 <button type="submit">Submit</button>
             </form>
         </section>
