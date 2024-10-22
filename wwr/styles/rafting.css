@@ -5,114 +5,138 @@
     --accent2-color: #f0f0f0;  /* Light gray for some backgrounds */
 }
 
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    max-width: 1200px;
-    margin: auto;
-}
+    color: #333;
+    }
 
+/* Header Styles */
 header {
-    background-color: var(--primary-color);
+    background-color: #8a2be2;
     padding: 20px;
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-}
-
-header img {
+    }
+    
+    header img {
     width: 80px;
     height: 80px;
-    background-color: var(--accent2-color);
-}
+    background-color: #f0f0f0;
+    }
+    
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    }
 
 nav {
     justify-self: end;
 }
 
 nav a {
-    color: var(--secondary-color);
+    color: #fff;
     text-decoration: none;
     margin-left: 20px;
     padding: 5px 10px;
     background-color: rgba(255, 255, 255, 0.2);
-}
+    }
 
 main {
     padding: 20px;
 }
 
-/* Hero Section */
+/* Hero Section Styles */
 .hero {
-    display: flex; /* Flexbox for layout */
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Vertically center items */
-    border: 2px solid var(--accent1-color);
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.hero-text {
-    flex: 1; /* Text takes available space */
-    max-width: 50%; /* Limit width for better layout */
-}
-
-.hero-image {
-    max-width: 40%; /* Size of the hero image */
-    height: auto; /* Maintain aspect ratio */
-}
-
-/* History Section */
-.history {
-    display: grid;
-    grid-template-columns: 1fr 80px 1fr; /* Two text columns with image in the center */
-    gap: 20px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    border: 2px solid #000;
+    padding: 10px;
     margin-bottom: 20px;
-}
+    max-width: 90%;
+    }
+    
+    .hero-text {
+    flex: 1;
+    max-width: 50%;
+    }
+    
+    .hero-image {
+    max-width: 30%;
+    height: auto;
+    }
 
-.history h2 {
-    grid-column: 1 / -1; /* Full width for heading */
-}
+/* History Section Styles */
+.history {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    border: 2px solid #000;
+    padding: 20px;
+    max-width: 90%;
+    }
+    
+    .history h2 {
+    flex-basis: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    }
+    
+    .history-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    }
+    
+    .history p {
+    flex: 1;
+    margin: 0;
+    text-align: justify;
+    }
+    
+    .history img {
+    width: 160px;
+    height: auto;
+    margin: 0 20px;
+    background-color: #8a2be2;
+    }
 
-.history img {
-    width: 30px; /* Set size for the history image */
-    height: 30px; /* Set size for the history image */
-    background-color: var(--primary-color);
-}
-
-/* Adventure Image Styling */
+/* Adventure Image Styles */
 .adventure-image {
-    max-width: 20%; /* Smaller size for adventure image */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 20%;
+    height: auto;
+    }
+    
+/* Google Map */
+.google-map {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensure the container takes full width */
+}
+
+.google-map iframe {
+    width: 100%; /* Set width to 100% to fit the frame */
+    height: 300px; /* Adjust height as needed for better visibility */
+    border-radius: 8px; /* Rounded corners */
+    border: none; /* Remove border if necessary */
 }
 
 /* Main Content Styles */
-main {
-    padding: 20px;
-}
-
-/* Contact Info Section */
 .contact-info {
     margin-bottom: 30px;
 }
 
 .company-details p {
     margin: 5px 0;
-}
-
-.google-map {
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.google-map iframe {
-    width: 100%; /* Responsive width */
-    height: 300px; /* Fixed height for the map */
-    border-radius: 8px; /* Rounded corners */
 }
 
 /* Employee Profiles */
@@ -182,7 +206,6 @@ figcaption {
     background-color: hsl(202, 53%, 25%); /* Darker blue */
 }
 
-/* Footer Styles */
 footer {
     background-color: var(--primary-color);
     color: var(--secondary-color);
