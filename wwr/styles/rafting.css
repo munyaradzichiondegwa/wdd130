@@ -1,139 +1,204 @@
 :root {
-    --primary-color: hsl(220, 60%, 80%); /* Light purple */
-    --secondary-color: hsl(202, 53%, 15%); /* Dark blue */
-    --background-color: rgba(255, 255, 255, 0.9);
-    --text-color: rgb(15, 128, 0);
+    --primary-color: #8a2be2;  /* Purple color for header and footer */
+    --secondary-color: #ffffff;  /* White for text */
+    --accent1-color: #000000;  /* Black for some text */
+    --accent2-color: #f0f0f0;  /* Light gray for some backgrounds */
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     max-width: 1200px;
     margin: auto;
-    background-color: var(--primary-color); /* Background color */
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    background-color: var(--primary-color);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    background-color: var(--secondary-color);
-    padding: 10px;
-    margin: 2px
 }
 
 header img {
-    max-width: 150px;
+    width: 80px;
+    height: 80px;
+    background-color: var(--accent2-color);
 }
 
 nav {
-    display: flex;
-    gap: 20px;
+    justify-self: end;
 }
 
 nav a {
-    color: white;
+    color: var(--secondary-color);
     text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
+main {
+    padding: 20px;
+}
+
+/* Hero Section */
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-    background-color: var(--background-color);
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically center items */
+    border: 2px solid var(--accent1-color);
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .hero-text {
-    max-width: 70%; /* Adjust as needed */
+    flex: 1; /* Text takes available space */
+    max-width: 50%; /* Limit width for better layout */
 }
 
 .hero-image {
-    max-width: 20%; /* Smaller hero image */
-    height: auto;
-    margin-left: 10px; /* Space between text and image */
+    max-width: 40%; /* Size of the hero image */
+    height: auto; /* Maintain aspect ratio */
 }
 
+/* History Section */
 .history {
-    padding: 20px;
-    background-color: var(--background-color);
-    border: 1px solid var(--secondary-color);
-    margin: 10px;
-    text-align: center;
-}
-
-.history-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Wrap text and image */
-}
-
-.history p {
-    width: 40%; /* Adjust this for the text width */
-    margin: 0 20px; /* Space around text */
-}
-
-.history-image {
-    max-width: 10%; /* Smaller history image */
-    height: auto;
-}
-
-.adventure {
-    padding: 20px;
-    background-color: var(--background-color);
-}
-
-.adventure h2 {
-    text-align: center;
-    font-size: 1em;
-    margin: 0;
-}
-
-.image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Larger images */
-    gap: 10px;
+    grid-template-columns: 1fr 80px 1fr; /* Two text columns with image in the center */
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.history h2 {
+    grid-column: 1 / -1; /* Full width for heading */
+}
+
+.history img {
+    width: 30px; /* Set size for the history image */
+    height: 30px; /* Set size for the history image */
+    background-color: var(--primary-color);
+}
+
+/* Adventure Image Styling */
+.adventure-image {
+    max-width: 20%; /* Smaller size for adventure image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Main Content Styles */
+main {
     padding: 20px;
 }
 
-.image-grid figure {
-    margin: 0;
+/* Contact Info Section */
+.contact-info {
+    margin-bottom: 30px;
 }
 
-.image-grid img {
-    width: 80%;
-    height: auto;
-    border-radius: 1px;
+.company-details p {
+    margin: 5px 0;
 }
 
-footer {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 15px;
-    margin: 5px 0; /* Add a default margin to the footer */
-}
-
-.footer-content {
+.google-map {
+    margin: 20px 0;
     display: flex;
-    justify-content: space-between; /* Space between left and right */
-    align-items: center; /* Center items vertically */
-    max-width: 1000px; /* Match the main content width */
-    margin: auto; /* Center the footer */
+    justify-content: center;
 }
 
-.footer-content p {
-    margin: 0; /* Remove default margin */
-    padding-right: 10px; /* Optional: Add slight padding for separation */
+.google-map iframe {
+    width: 100%; /* Responsive width */
+    height: 300px; /* Fixed height for the map */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Employee Profiles */
+.employee-profiles {
+    margin: 30px 0;
+}
+
+.profiles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.profiles img {
+    max-width: 150px;
+    border-radius: 50%; /* Circular profile images */
+}
+
+/* Contact Form */
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.contact-form button {
+    background-color: var(--secondary-color); /* Dark blue */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.contact-form button:hover {
+    background-color: hsl(202, 53%, 25%); /* Darker blue */
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .social-icons {
     display: flex;
-    gap: 5px; /* Reduce gap between icons */
+    gap: 10px;
 }
 
 .social-icons img {
-    width: 25px; /* Adjust icon size if needed */
-    height: 25px; /* Adjust icon size if needed */
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary-color);
 }
