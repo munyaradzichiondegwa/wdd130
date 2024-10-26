@@ -79,7 +79,6 @@ main {
     border-radius: 10px;
     }
         
-    <style>
     /* Note: Most styles would be in rafting.css */
     
     /* Trip Cards */
@@ -271,3 +270,130 @@ footer {
     height: 30px;
     background-color: var(--secondary-color);
 }
+
+        /* Header Grid Layout */
+        header {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            align-items: center;
+            background-color: grb(0 10% 90%);
+            padding: 1rem;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+        }
+
+        nav {
+            justify-self: end;
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            padding: 0.5rem 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Footer Layout */
+        footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+        }
+
+        .social-icons {
+            display: grid;
+            grid-template-columns: repeat(3, 40px);
+            gap: 1rem;
+            justify-content: end;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* High Contrast Colors */
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            color: #1a1a1a;
+        }
+
+        .hero-text {
+            background-color: rgba(26, 26, 26, 0.8);
+            color: #ffffff;
+            padding: 2rem;
+        }
+
+        .hero-text p {
+            color: #ffffff;
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            header {
+                grid-template-columns: 1fr;
+                justify-items: center;
+                gap: 1rem;
+            }
+
+            nav {
+                justify-self: center;
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            footer {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
