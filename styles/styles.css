@@ -157,3 +157,62 @@ main {
 html {
   scroll-behavior: smooth;
 }
+
+/* Previous CSS remains the same, with these additions/modifications */
+
+/* Main content width limitation */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Aside styling */
+aside {
+  width: 100%;
+  margin: 2rem 0;
+  border: 2px solid #3498db;
+  padding: 1.5rem;
+  background-color: #f0f4f8;
+  color: #2c3e50;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Aside image styling */
+aside img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* More specific main image styling */
+main img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+  border: 4px solid #3498db;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph styling */
+p { 
+  padding: 0;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 2rem;
+  border-top: 2px solid #3498db;
+  text-align: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  aside img {
+      width: 150px;
+  }
+}
