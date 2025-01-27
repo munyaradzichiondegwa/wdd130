@@ -1,0 +1,63 @@
+/* styles/quiz.css */
+body {
+    font-family: sans-serif;
+    margin: 20px; /* Provides spacing around the content */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main {
+    max-width: 600px; /* Limits the width of the form on larger screens */
+    margin: 0 auto; /* Centers the form horizontally */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column; /* Creates a single-column layout */
+    gap: 15px; /* Adds spacing between form elements */
+}
+
+div {  /* Style each question container */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select,
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 400px) {
+    main {
+        margin: 10px; /* Adjust margins for smaller screens */
+    }
+}
