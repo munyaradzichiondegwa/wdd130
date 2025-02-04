@@ -53,13 +53,24 @@ nav a {
 }
 
 .hero {
-    text-align: center;
+    position: relative; /* Establishes a positioning context for children */
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+.hero-image {
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Keeps aspect ratio */
+}
+
+.hero-overlay {
+    position: absolute; /* Absolutely position in relation to the .hero div */
+    top: 50%; /* Move down to the center */
+    left: 50%; /* Move in from left to center */
+    transform: translate(-50%, -50%); /* Adjust positioning to center exactly */
+    color: white; /* Text color (adjust as needed) */
+    text-align: center; /* Center the text */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: dark background with transparency for better readability */
+    padding: 20px; /* Padding for text container */
+    border-radius: 10px; /* Optional: rounded corners */
 }
 
 .content {
