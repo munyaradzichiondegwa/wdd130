@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #007bff; /* Primary color for header */
+    --secondary-color: #6c757d; /* Secondary color for footer */
+    --text-color: #212529; /* Typical text color */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Adjust columns as needed */
+    align-items: center;
+    padding: 1rem;
+}
+
+#logo {
+    max-width: 100px; /* Logo size */
+}
+
+h1 {
+    text-align: center;
+    font-size: 2rem; /* Increased font size for visibility */
+}
+
+nav {
+    display: flex; /* Use flexbox for horizontal navigation */
+}
+
+nav ul {
+    display: flex; /* Flex container for nav items */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem; /* Adjust font size */
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns items to the start of the flex container */
+    margin-bottom: 20px;
+}
+
+.client-image {
+    width: 120px; /* Adjust client image size */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-right: 15px;
+}
+
+.history {
+    margin: 20px 0; /* Uniform margin for separation */
+}
+
+.adventure {
+    margin-bottom: 20px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Five images in a row */
+    gap: 10px; /* Space between images */
+}
+
+.adventure-gallery figure {
+    margin: 0; /* Reset margin */
+}
+
+.adventure-gallery img {
+    width: 100%; /* Full width of grid cell */
+    height: auto; /* Keep aspect ratio */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: center; /* Center social links */
+}
+
+.sociallinks a {
+    margin: 0 10px; /* Space between social icons */
+}
+
+.sociallinks img {
+    width: 30px; /* Adjust size of social icons */
+    height: auto;
+}
+
+.sociallinks a:hover {
+    opacity: 0.7; /* Hover effect */
+}
