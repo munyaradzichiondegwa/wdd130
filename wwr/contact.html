@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Tugwi White Water Rafting</title>
+    <title>Contact Us - Tugwi White Water Rafting</title>
+    <meta name="description"
+        content="Contact Tugwi White Water Rafting for inquiries about services and adventures. Reach out to us for more information.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -28,60 +32,78 @@
     </header>
 
     <main>
-        <div class="hero">
-            <img src="images/hero-image.jpg" alt="Rafting Adventure" class="hero-image">
-            <div class="hero-overlay">
-                <h2>Rafting Adventure</h2>
-                <p>
-                    Experience the thrill of navigating through some of the most exciting rivers! 
-                    Our rafting adventures are designed for all levels, from beginners to expert thrill-seekers. 
-                    Join us as we explore breathtaking landscapes, tackle challenging rapids, and make unforgettable memories along the way.
-                </p>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 13 Bradburn Street, Masvingo</p>
+            <p><strong>Phone:</strong> +263 774 387 106</p>
+            <p><strong>Email:</strong> <a href="mailto:info@tugwi.com">info@tugwi.com</a></p>
+        </section>
+
+        <section class="map">
+            <h2>Our Location</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509262!2d144.95373631511537!3d-37.81627987975168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f81db81%3A0x5045675218ceed30!2sTugwi%20White%20Water%20Rafting!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="images/kue.jpg" alt="Employee 1" class="employee-image">
+                <figcaption>Kue - Rafting Guide</figcaption>
             </div>
-        </div>
-        <section class="content">
-            <article class="intro">
-                <img src="images/happy-client.jpg" alt="Happy Client" class="client-image">
-                <p>At Tugwi, our mission is to deliver unparalleled adventure experiences that 
-                    connect people with nature while ensuring safety and fun.</p>
-            </article>
+            <div class="employee">
+                <img src="images/Tracey.jpg" alt="Employee 2" class="employee-image">
+                <figcaption>Tracey - Safety Instructor</figcaption>
+            </div>
+            <div class="employee">
+                <img src="images/Petty.jpg" alt="Employee 3" class="employee-image">
+                <figcaption>Petty - Customer Service</figcaption>
+            </div>
+        </section>
 
-            <section class="history">
-                <h2>History</h2>
-                <p>Tugwi White Water Rafting was founded in 2010, stemming from a shared passion for the wild rivers and the thrill of adventure. 
-                    Over the years, we have grown into a leading provider of rafting experiences, guiding thousands through our breathtaking local waters.</p>
-            </section>
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <section class="adventure">
-                <h2>Adventure Awaits You!</h2>
-                <div class="adventure-gallery">
-                    <figure>
-                        <img src="images/rafting1.jpg" alt="Los Dientes del Diablo">
-                        <figcaption>Los Dientes del Diablo</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/rafting2.jpg" alt="Big Mallard">
-                        <figcaption>Big Mallard</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/rafting3.jpg" alt="Half Day Adventure">
-                        <figcaption>Half Day Adventure</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/rafting4.jpg" alt="The Crooked River">
-                        <figcaption>The Crooked River</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/rafting5.jpg" alt="Class V River X">
-                        <figcaption>Class V River X</figcaption>
-                    </figure>
-                </div>
-            </section>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of your message:</legend>
+                    <label>
+                        <input type="radio" name="purpose" value="General Inquiry" aria-label="General Inquiry"
+                            required>
+                        General Inquiry
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="Reservation Question"
+                            aria-label="Reservation Question">
+                        Reservation Question
+                    </label>
+                    <label>
+                        <input type="radio" name="purpose" value="Website Suggestion" aria-label="Website Suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="newsletter" aria-label="Subscribe to newsletter">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>© 2023 Tugwi White Water Rafting | Your Name</p>
+        <p>© 2025 Tugwi White Water Rafting | Munyaradzi Chiondegwa</p>
         <nav class="sociallinks">
             <a href="https://facebook.com">
                 <img src="images/5296499_fb_facebook_facebook logo_icon.svg" alt="Facebook"> Facebook
@@ -93,6 +115,7 @@
                 <img src="images/3225191_app_instagram_logo_media_popular_icon.svg" alt="Instagram"> Instagram
             </a>
         </nav>
+        <p><a href="images/wireframe.png" target="_blank">View Wireframe Design</a></p> <!-- Update link accordingly -->
     </footer>
 </body>
 
